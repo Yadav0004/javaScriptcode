@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+     <style>
+         body{
+            font-family: Arial,sans-serif;
+            text-align: center;
+            margin: 80px;
+            padding: 20px;
+         }
+        .container{
+width: 400px;
+margin:  0 auto;
+border: 1px solid #ccc;
+padding: 20px;
+border-radius: 5px;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;   
+    
+}
+ button{
+    padding: -8px 20px;
+    width: 70px;
+    height: 35px;
+ cursor: pointer;
+ background:#af5757;
+border: none;
+ border-radius: 10px;
+ border: 2px solid black;
+ /* margin-bottom: 30px; */
+ /* bottom: 10%; */
+
+ }
+ button:hover{
+    background-color: #ddd;
+
+ }
+ ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    text-align:left ;
+
+ }
+li{
+    margin-bottom: 10px;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List +</h1>
+         <input  id= "taskInput" type="text" placeholder="Add New  todo">
+         <button onclick="addTask()">Add</button>
+     <ul id="taskList"></ul>
+    </div>
+</body>
+</html>
